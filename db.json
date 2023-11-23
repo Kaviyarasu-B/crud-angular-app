@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstname": "Kaviyarasu",
+      "lastname": "B",
+      "email": "kavi@gmail.com",
+      "mobile": 7695908313,
+      "gender": "Male",
+      "country": "india",
+      "state": "TamilNadu",
+      "city": "coimbatore"
+    },
+    {
+      "id": 2,
+      "firstname": "Chandru ",
+      "lastname": "C",
+      "email": "Chandru@gmail.com",
+      "mobile": 9786498700,
+      "gender": "Male",
+      "country": "india",
+      "state": "TamilNadu",
+      "city": "coimbatore"
+    },
+    {
+      "id": 3,
+      "firstname": "Abinesh",
+      "lastname": "RG",
+      "email": "Abinesh@gmail.com",
+      "mobile": 7800109945,
+      "gender": "Male",
+      "country": "india",
+      "state": "karnataka",
+      "city": "Bangalore"
+    },
+    {
+      "id": 4,
+      "firstname": "Harish",
+      "lastname": "V",
+      "email": "Harish@123",
+      "mobile": 9888757688,
+      "gender": "Male",
+      "country": "india",
+      "state": "TamilNadu",
+      "city": "Tirunelveli"
+    },
+    {
+      "id": 5,
+      "firstname": "Mani",
+      "lastname": "M",
+      "email": "mani@gmail.com",
+      "mobile": 8798654356,
+      "gender": "Male",
+      "country": "india",
+      "state": "TamilNadu",
+      "city": "chennai"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
