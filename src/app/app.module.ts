@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SampleComponent } from './sample/sample.component';
 
 // import { MyModalComponent } from './my-modal/my-modal.component';
 
@@ -17,6 +18,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     RegisterComponent,
     DashboardComponent,
+    SampleComponent,
 
     // MyModalComponent
   ],

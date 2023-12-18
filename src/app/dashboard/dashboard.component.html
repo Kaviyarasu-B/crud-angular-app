@@ -20,9 +20,9 @@
                 <th>Mobile</th>
                 <th>Email</th>
                 <th>Gender</th>
+                <!-- <th>Country</th> -->
                 <th>Country</th>
-                <th>State</th>
-                <th>City</th>
+                <th>state</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
@@ -35,7 +35,7 @@
                 <td>{{row.email}}</td>
                 <td>{{row.mobile}}</td>
                 <td>{{row.gender}}</td>
-                <td>{{row.country}}</td>
+                <!-- <td>{{row.country}}</td> -->
                 <td>{{row.state}}</td>
                 <td>{{row.city}}</td>
 
@@ -99,7 +99,7 @@
                         </div>
 
                         <!-- Country, State, City -->
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col mb-3"><label for="country">Country</label>
                             </div>
                             <div class="col mb-3">
@@ -110,45 +110,80 @@
                         <option value="canada">Canada</option>
                         <option value="United States">United States</option>
                         <option value="china">China</option>
-                        <option value="Africa">Africa</option>
+                        <option value="Africa">Africa</option> -->
                         <!-- Add more options as needed -->
-                      </select>
-                            </div>
+                        <!-- </select>
+                </div>
 
-                        </div>
-                        <div class="row">
-                            <div class="col mb-3"><label for="state">State</label>
-                            </div>
-                            <div class="col mb-3">
+            </div>
+            <div class="row">
+                <div class="col mb-3"><label for="state">State</label>
+                </div>
+                <div class="col mb-3">
 
-                                <select id="state" formControlName="state">
+                    <select id="state" formControlName="state">
                         <option value="" disabled>Select a State</option>
                         <option value="Delhi">Delhi</option>
                         <option value="TamilNadu">TamilNadu</option>
                         <option value="karnataka">karnataka</option>
                         <option value="Andhrapradesh">Andhrapradesh</option>
-                        <option value="Madhya pradesh">Madhya pradesh</option>
+                        <option value="Madhya pradesh">Madhya pradesh</option> -->
                         <!-- Add more options as needed -->
-                      </select>
-                            </div>
+                        <!-- </select>
+                </div>
 
-                        </div>
-                        <div class="row">
-                            <div class="col mb-3"><label for="city">City</label>
-                            </div>
-                            <div class="col mb-3">
+            </div>
+            <div class="row">
+                <div class="col mb-3"><label for="city">City</label>
+                </div>
+                <div class="col mb-3">
 
-                                <select id="city" formControlName="city">
+                    <select id="city" formControlName="city">
                         <option value="" disabled>Select a city</option>
                         <option value="chennai">chennai</option>
-                        <option value="coimbatore">Coimbatore</option>
+                        <option value="coimbatore">Coimbatore</option> -->
                         <!-- Add more options as needed -->
-                      </select>
-                            </div>
+                        <!-- </select>
+                </div> 
 
+                </div> -->
+                        <!-- Email -->
+                        <div class="row">
+                            <div class="col mb-3"><label for="email">Email</label>
+                            </div>
+                            <div class="col mb-3"><input type="text" formControlName="email" id="email"></div>
+                        </div>
+
+                        <!---  -->
+                        <!--
+                            Country
+                        -->
+
+                        <!--State-->
+                        <div class="row">
+                            <div class="col mb-3"><label for="State">Country  <!--change--> </label>
+                            </div>
+                            <select (change)="onSelect($event)" id="state" formControlName="state">
+                <option>Select Country  <!--change--></option>
+                <option *ngFor="let states of state" value="{{states.id}}">{{states.name}}</option>
+            </select>
                         </div>
 
 
+                        <!-- City-->
+
+                        <div class="row">
+                            <div class="col mb-3"><label for="city">State  <!--change--> </label>
+
+                            </div>
+                            <select id="city" formControlName="city">
+              <option>Select State  <!--change--></option>
+              <option *ngFor="let cities of city"  >{{cities.name}}</option>
+              </select>
+                            <span *ngIf="registerForm.get('city')?.errors?.['required'] && registerForm.get('city')?.touched">
+            state is required.
+        </span>
+                        </div>
                     </form>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
